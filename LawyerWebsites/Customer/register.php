@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="theme-assets/css/bootstrap.css">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
@@ -67,32 +68,49 @@ span.psw {
 </style>
 </head>
 <body>
-
-<h2>Login Form</h2>
+<div class="container">
+<center>
+<h2>Customer Create New Account</h2>
+  
+</center>
 
 <form action="/action_page.php" method="post">
   <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
-    <label for="uname"><b>Username</b></label>
+  <label for="uname"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+
+
+  <label for="uname"><b>Email</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
         
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+    <label for="uname"><b>contact</b></label>
+    <input type="text" placeholder="Enter Contact" name="ucontact" required>
+
+    <label for="uname"><b>CNIC</b></label>
+    <input type="text" placeholder="Enter CNIC" name="ucnic" required>
+
+    
+    <label for="uname"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="uaddress" required>
+
+    
+    <label for="uname"><b>Profile</b></label>
+    <input type="file" placeholder="Enter Profile Images" name="filename" required>
+
+    <button type="submit">Create</button>
+    <a href="login.php">Already Have An account</a>
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
 </form>
+
+</div>
 
 </body>
 </html>
+
