@@ -1,3 +1,16 @@
+
+<?php 
+include("connection.php");
+session_start();
+if(isset($_SESSION["adminID"]))
+{
+  header("location:index.php");
+}
+else
+{
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -74,7 +87,7 @@ span.psw {
   
 </center>
 
-<form action="/action_page.php" method="post">
+<form action="" method="post">
   <div class="imgcontainer">
   </div>
 
@@ -85,13 +98,36 @@ span.psw {
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
         
-    <button type="submit">Login</button>
+    <button type="submit" name="btnlogin">Login</button>
     
   </div>
 
 </form>
+<?php 
+  if(isset($_POST["btnlogin"]))
+  {
+    $email = $_POST["uname"];
+    $password = $_POST["psw"];
 
+    $i = mysqli_query($con,"select * from admin_tb where Email='$email' AND Password='$password'");
+    
+    $check = mysqli_num_rows($i);
+    $r = mysqli_fetch_array($i);
+    if($i>0)
+    {
+      $_SESSION["adminID"] = $r[0];
+      header("location:index.php");
+    }
+    else
+    {
+      echo "<h1>Login Failed</h1>";
+    }
+
+  }
+
+?>
 </div>
 
 </body>
 </html>
+<?php } ?>
