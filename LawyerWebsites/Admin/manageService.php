@@ -118,7 +118,7 @@ else{
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
           <li class="active"><a href="index.html"><i class="ft-home"></i><span class="menu-title" data-i18n="">Dashboard</span></a>
           </li>
-          <li class=" nav-item"><a href="manageService.php"><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">Manage Service</span></a>
+          <li class=" nav-item"><a href="tables.html"><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">Manage Service</span></a>
           </li>
           <li class=" nav-item"><a href="tables.html"><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">Manage Lawyers</span></a>
           </li>
@@ -134,70 +134,32 @@ else{
 
     <div class="app-content content">
       <div class="content-wrapper">
-        <div class="content-wrapper-before"></div>
-        <div class="content-header row">
-        </div>
-        <div class="content-body"><!-- Chart -->
-<div class="row match-height">
-    <div class="col-12">
-        <div class="">
-            <div id="gradient-line-chart1" class="height-250 GradientlineShadow1"></div>
-        </div>
-    </div>
-</div>
-<!-- Chart -->
-<!-- eCommerce statistic -->
-<div class="row">
-    <div class="col-xl-4 col-lg-6 col-md-12">
-        <div class="card pull-up ecom-card-1 bg-white">
-            <div class="card-content ecom-card2 height-180">
-                <h5 class="text-muted danger position-absolute p-1">Progress Stats</h5>
-                <div>
-                    <i class="ft-pie-chart danger font-large-1 float-right p-1"></i>
-                </div>
-                <div class="progress-stats-container ct-golden-section height-75 position-relative pt-3  ">
-                    <div id="progress-stats-bar-chart"></div>
-                    <div id="progress-stats-line-chart" class="progress-stats-shadow"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-4 col-lg-6 col-md-12">
-        <div class="card pull-up ecom-card-1 bg-white">
-            <div class="card-content ecom-card2 height-180">
-                <h5 class="text-muted info position-absolute p-1">Activity Stats</h5>
-                <div>
-                    <i class="ft-activity info font-large-1 float-right p-1"></i>
-                </div>
-                <div class="progress-stats-container ct-golden-section height-75 position-relative pt-3">
-                    <div id="progress-stats-bar-chart1"></div>
-                    <div id="progress-stats-line-chart1" class="progress-stats-shadow"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-4 col-lg-12">
-        <div class="card pull-up ecom-card-1 bg-white">
-            <div class="card-content ecom-card2 height-180">
-                <h5 class="text-muted warning position-absolute p-1">Sales Stats</h5>
-                <div>
-                    <i class="ft-shopping-cart warning font-large-1 float-right p-1"></i>
-                </div>
-                <div class="progress-stats-container ct-golden-section height-75 position-relative pt-3">
-                    <div id="progress-stats-bar-chart2"></div>
-                    <div id="progress-stats-line-chart2" class="progress-stats-shadow"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--/ eCommerce statistic -->
+      <br>          
+      <center>
+                    <h1>
+                    Manage Service
+                    </h1>
+                </center>
 
-<!-- Statistics -->
-
-<!--/ Statistics -->
-        </div>
-      </div>
+                <table id="table_id" class="display">
+                    <thead>
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Row 1 Data 1</td>
+                            <td>Row 1 Data 2</td>
+                        </tr>
+                        <tr>
+                            <td>Row 2 Data 1</td>
+                            <td>Row 2 Data 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
     </div>
     <!-- ////////////////////////////////////////////////////////////////////////////-->
 
