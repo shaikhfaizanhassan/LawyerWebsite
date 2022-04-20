@@ -116,11 +116,12 @@ span.psw {
     if($i>0)
     {
       $_SESSION["adminID"] = $r[0];
+      $_SESSION["AdminName"] = $r[1];
       header("location:index.php");
     }
     else
     {
-      echo "<h1>Login Failed</h1>";
+      echo "<script>alert('Login Failed')</script>";
     }
 
   }

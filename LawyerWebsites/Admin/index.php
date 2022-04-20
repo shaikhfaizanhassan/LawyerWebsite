@@ -97,7 +97,20 @@ else{
       <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">       
           <li class="nav-item mr-auto"><a class="navbar-brand" href="index.html"><img class="brand-logo" alt="Chameleon admin logo" src="theme-assets/images/logo/logo.png"/>
-              <h3 class="brand-text">Admin</h3></a></li>
+              <h3 class="brand-text">
+                  <?php 
+                    if(isset($_SESSION["adminID"])!=null)
+                    {
+                     echo $_SESSION["AdminName"];
+                    }
+                    else
+                    {
+                      echo "jhs";
+                    }
+                  ?>
+
+
+              </h3></a></li>
           <li class="nav-item d-md-none"><a class="nav-link close-navbar"><i class="ft-x"></i></a></li>
         </ul>
       </div>
